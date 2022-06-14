@@ -1,0 +1,99 @@
+@import '~antd/dist/antd.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+//define max-width
+h1{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.mw-1024 {
+    max-width: 1030px;
+    padding: 0px 15px;
+    display: block;
+    margin: auto;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+.ant-layout{
+    background:#fff;
+}
+.list-sns {
+    display: flex;
+    align-items: center;
+
+    li {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        font-size: 28px;
+        &:first-child{
+            font-size: 20px;
+            .like{
+                fill: red;
+            }
+            .unlike{
+                fill: black;
+            }
+            width: 100%;
+        }
+    }
+}
+
+.create__post{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 33;
+  
+    border-radius:50%;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tbl-cart{
+    th,td{
+        text-align: center;
+        padding: 15px 25px;
+    }
+    tr{
+        border: 1px solid #0f834d;
+    }
+    td{
+      
+        font-size: 16px;
+        border-bottom: 1px solid #0f834d;
+    }
+    th{
+        background: #0f834d;
+        font-size: 18px;
+        color: #fff;
+    }
+    .product-remove{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    input{
+        border: 1px solid #0f834d;
+        width: 50px;
+    
+    }
+}
+input{
+    padding: 5px;
+}
+.coupon{
+    margin-top: 10px;
+    input{
+        margin-right: 10px;
+        height: 32px;
+    }
+}
